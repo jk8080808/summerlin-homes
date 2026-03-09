@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summerlin Single-Family Homes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="eyebrow">Summerlin • Single Family • Under $1.5M</div>
+      <h1>Summerlin homes with room to live.</h1>
+      <p class="subhead">Sample starter site showing for-sale and under-contract single-family homes under $1.5M, under 3,500 sq ft, with lot sizes over 5,500 sq ft.</p>
+      <div class="hero-badges">
+        <span>Daily refresh ready</span>
+        <span>Compliance-ready card structure</span>
+        <span>GitHub Pages friendly</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-wrap">
+    <section class="filters panel">
+      <div>
+        <label for="villageFilter">Village</label>
+        <select id="villageFilter">
+          <option value="">All villages</option>
+        </select>
+      </div>
+      <div>
+        <label for="statusFilter">Status</label>
+        <select id="statusFilter">
+          <option value="">All statuses</option>
+          <option value="For Sale">For Sale</option>
+          <option value="Under Contract">Under Contract</option>
+        </select>
+      </div>
+      <div>
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="text" placeholder="Address or village" />
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card panel">
+        <div class="stat-label">Matching listings</div>
+        <div class="stat-value" id="matchCount">0</div>
+      </div>
+      <div class="stat-card panel">
+        <div class="stat-label">Average price</div>
+        <div class="stat-value" id="avgPrice">$0</div>
+      </div>
+      <div class="stat-card panel">
+        <div class="stat-label">Average lot size</div>
+        <div class="stat-value" id="avgLot">0 sf</div>
+      </div>
+    </section>
+
+    <section class="section-head">
+      <div>
+        <h2>Current matches</h2>
+        <p id="resultsText">Showing 0 homes</p>
+      </div>
+    </section>
+
+    <section id="listingGrid" class="listing-grid"></section>
+
+    <section class="footer-note panel">
+      <h3>About this starter site</h3>
+      <p>This version includes sample data so you can see the site working on GitHub Pages. When you connect an authorized IDX / MLS / RESO feed later, these sample homes can be replaced with live listings, real photos, and valid detail-page links.</p>
+      <p class="small">Information is deemed reliable but not guaranteed. Display of listing data and photos must follow the rules of the authorized data source, MLS, and IDX agreement. This site is intended as a consumer-facing display template only.</p>
+    </section>
+  </main>
+
+  <script src="assets/live-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
